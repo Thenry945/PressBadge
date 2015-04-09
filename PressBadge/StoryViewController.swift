@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StoryViewController.swift
 //  PressBadge
 //
 //  Created by Travis Henrichs on 4/9/15.
@@ -8,13 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StoryViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 
 
-
 }
-
