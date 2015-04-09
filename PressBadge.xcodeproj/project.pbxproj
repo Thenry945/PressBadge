@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		1FA855F81AD73F5400A2A2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA855F71AD73F5400A2A2A7 /* AppDelegate.swift */; };
-		1FA855FA1AD73F5400A2A2A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA855F91AD73F5400A2A2A7 /* ViewController.swift */; };
 		1FA855FD1AD73F5400A2A2A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FA855FB1AD73F5400A2A2A7 /* Main.storyboard */; };
 		1FA855FF1AD73F5400A2A2A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FA855FE1AD73F5400A2A2A7 /* Images.xcassets */; };
 		1FA856021AD73F5400A2A2A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FA856001AD73F5400A2A2A7 /* LaunchScreen.xib */; };
 		1FA8560E1AD73F5400A2A2A7 /* PressBadgeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8560D1AD73F5400A2A2A7 /* PressBadgeTests.swift */; };
+		1FA856181AD7464500A2A2A7 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA856171AD7464500A2A2A7 /* StatusViewController.swift */; };
+		1FA8561A1AD7468A00A2A2A7 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */; };
+		1FA8561C1AD746DA00A2A2A7 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */; };
+		1FA8561E1AD746E600A2A2A7 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		1FA855F21AD73F5400A2A2A7 /* PressBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA855F61AD73F5400A2A2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA855F71AD73F5400A2A2A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1FA855F91AD73F5400A2A2A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1FA855FC1AD73F5400A2A2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FA855FE1AD73F5400A2A2A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FA856011AD73F5400A2A2A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1FA856071AD73F5400A2A2A7 /* PressBadgeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PressBadgeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA8560C1AD73F5400A2A2A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1FA8560D1AD73F5400A2A2A7 /* PressBadgeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PressBadgeTests.swift; sourceTree = "<group>"; };
+		1FA856171AD7464500A2A2A7 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
+		1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
+		1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +84,14 @@
 			isa = PBXGroup;
 			children = (
 				1FA855F71AD73F5400A2A2A7 /* AppDelegate.swift */,
-				1FA855F91AD73F5400A2A2A7 /* ViewController.swift */,
 				1FA855FB1AD73F5400A2A2A7 /* Main.storyboard */,
 				1FA855FE1AD73F5400A2A2A7 /* Images.xcassets */,
 				1FA856001AD73F5400A2A2A7 /* LaunchScreen.xib */,
 				1FA855F51AD73F5400A2A2A7 /* Supporting Files */,
+				1FA856171AD7464500A2A2A7 /* StatusViewController.swift */,
+				1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */,
+				1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */,
+				1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */,
 			);
 			path = PressBadge;
 			sourceTree = "<group>";
@@ -212,7 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA855FA1AD73F5400A2A2A7 /* ViewController.swift in Sources */,
+				1FA8561E1AD746E600A2A2A7 /* StoryViewController.swift in Sources */,
+				1FA856181AD7464500A2A2A7 /* StatusViewController.swift in Sources */,
+				1FA8561A1AD7468A00A2A2A7 /* ArticleViewController.swift in Sources */,
+				1FA8561C1AD746DA00A2A2A7 /* BadgeViewController.swift in Sources */,
 				1FA855F81AD73F5400A2A2A7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +419,7 @@
 				1FA856131AD73F5400A2A2A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA856141AD73F5400A2A2A7 /* Build configuration list for PBXNativeTarget "PressBadgeTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +428,7 @@
 				1FA856161AD73F5400A2A2A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
