@@ -32,7 +32,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5c8-Zy-Fol">
-                        <barButtonItem key="rightBarButtonItem" title="Earned" id="KZ4-yg-5o0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Earned" id="KZ4-yg-5o0">
+                            <connections>
+                                <segue destination="qHu-iC-dNO" kind="show" identifier="toBadgesCollection" id="gJY-RN-rfS"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="badgeStatusTable" destination="dp5-po-RKj" id="cw5-G1-cg0"/>
@@ -70,6 +74,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="AZN-kp-uWR" kind="show" identifier="toStory" id="CwA-t8-5V5"/>
                     </connections>
@@ -89,6 +95,12 @@
                     <view key="view" contentMode="scaleToFill" id="Dmw-q6-Z3R">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vCa-VK-X3y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
