@@ -16,6 +16,7 @@
 		1FA8561A1AD7468A00A2A2A7 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */; };
 		1FA8561C1AD746DA00A2A2A7 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */; };
 		1FA8561E1AD746E600A2A2A7 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */; };
+		53BA31A81ADC86FE004BF0CB /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BA31A71ADC86FE004BF0CB /* database.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +43,7 @@
 		1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
 		1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		53BA31A71ADC86FE004BF0CB /* database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */,
 				1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */,
 				1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */,
+				53BA31A71ADC86FE004BF0CB /* database.swift */,
 			);
 			path = PressBadge;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				1FA8561E1AD746E600A2A2A7 /* StoryViewController.swift in Sources */,
 				1FA856181AD7464500A2A2A7 /* StatusViewController.swift in Sources */,
+				53BA31A81ADC86FE004BF0CB /* database.swift in Sources */,
 				1FA8561A1AD7468A00A2A2A7 /* ArticleViewController.swift in Sources */,
 				1FA8561C1AD746DA00A2A2A7 /* BadgeViewController.swift in Sources */,
 				1FA855F81AD73F5400A2A2A7 /* AppDelegate.swift in Sources */,
