@@ -21,5 +21,6 @@ class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var badgeStatusTable: UITableView!
     
+    
 
 }
