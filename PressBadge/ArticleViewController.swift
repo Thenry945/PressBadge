@@ -9,6 +9,10 @@
 import UIKit
 
 class ArticleViewController: UIViewController {
+    
+    var storyList: NewsStories = NewsStories();
+    let urlString = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=Yellen&api-key=379f80bbdce5bde2ca5619951803bbea:16:71569476";
+    var selectedStory: Story?
 
     override func viewDidLoad() {
         super.viewDidLoad()
