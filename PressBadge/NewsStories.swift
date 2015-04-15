@@ -49,10 +49,9 @@ class NewsStories: NSObject {
                         if let storyID = newsStory["\(idOfStory)"] as? NSDictionary{
                             if let bodyText = storyID["body"] as? String{
                                 if let storySection = storyID["sect_hed"] as? NSString {
-                                    if let storyHeadline = newsStory["headline"] as? NSDictionary {
+                                    if let storyHeadline = newsStory["headline"] as? NSString {
                                         if let pubTime = storyID["pub_time"] as? NSString {
-                                            stories.append(Story(forBody: bodyText as String, forHeadline: storyHeadline as String, forSection: storySection as String,
-                                                forPub_Time:pubTime as String))
+                                            stories.append(Story(forBody: bodyText as String, forHeadline: storyHeadline as String, forSection: storySection as String, forPub_Time: pubTime as String))
                                         }
                                     }
                                 }
