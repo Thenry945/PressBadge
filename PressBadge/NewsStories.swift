@@ -38,37 +38,39 @@ class NewsStories: NSObject {
     
     func parse(jsonData: NSData, completionHandler: (NewsStories, String?) -> Void) {
         var jsonError: NSError?
+        var storyCounter = 0
+        var idOfStory = 183763
         
         
         if let jsonResult = NSJSONSerialization.JSONObjectWithData(jsonData, options: NSJSONReadingOptions.MutableContainers, error: &jsonError) as? NSDictionary {
-            if (jsonResult.count > 0)
-            {
-                if let status = jsonResult["status"] as? String {
-                    if (status == "OK"){
-                        if let jsonResponse: AnyObject = jsonResult["response"]{
-                            if let newsStoryData = jsonResponse["docs"] as? NSArray {
-                                for newsStory in  newsStoryData{
-                                    if let storyURL = newsStory["web_url"] as? NSString {
-                                        if let storySection = newsStory["section_name"] as? NSString {
-                                            if let storyMain = newsStory["headline"] as? NSDictionary {
-                                                if let storyHeadline = storyMain["main"] as? NSString {
-                                                    stories.append(Story(forBody: bodyText as String, forHeadline: storyHeadline as String, forSection: storySection as String, forPub_Time: pubTime as String))
-                                                }
-                                            }
+            if (jsonResult.count > 0){
+                if let newsStoryData = jsonResult["\(storyCounter)"] as? NSArray {
+                    for newsStory in  newsStoryData{
+                        if let storyID = newsStory["\(idOfStory)"] as? NSDictionary{
+                            if let bodyText = storyID["body"] as? String{
+                                if let storySection = storyID["sect_hed"] as? NSString {
+                                    if let storyHeadline = newsStory["headline"] as? NSString {
+                                        if let pubTime = storyID["pub_time"] as? NSString {
+                                            stories.append(Story(forBody: bodyText as String, forHeadline: storyHeadline as String, forSection: storySection as String, forPub_Time: pubTime as String))
                                         }
                                     }
                                 }
                             }
+                            
                         }
-                        
-                        
-                        
+                    ++idOfStory
                     }
+                    
+                }
+            ++storyCounter
+            }
+        
+                        
+                        
+            
                     dispatch_async(dispatch_get_main_queue(), {
                         completionHandler(self, nil)
                     })
-                }
-            }
         } else {
             if let unwrappedError = jsonError {
                 dispatch_async(dispatch_get_main_queue(), {
