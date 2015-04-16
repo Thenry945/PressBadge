@@ -17,8 +17,8 @@
 		1FA856181AD7464500A2A2A7 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA856171AD7464500A2A2A7 /* StatusViewController.swift */; };
 		1FA8561A1AD7468A00A2A2A7 /* ArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */; };
 		1FA8561C1AD746DA00A2A2A7 /* BadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */; };
-		1FA8561E1AD746E600A2A2A7 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */; };
 		53BA31A81ADC86FE004BF0CB /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BA31A71ADC86FE004BF0CB /* database.swift */; };
+		53BBD5871AE0350D00CB3105 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53BBD5861AE0350D00CB3105 /* StoryViewController.swift */; };
 		C4DC87211ADC94970090DD75 /* images.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC87201ADC94970090DD75 /* images.png */; };
 		C4DC87251ADC95A00090DD75 /* images-1.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC87221ADC95A00090DD75 /* images-1.png */; };
 		C4DC87261ADC95A00090DD75 /* science4.png in Resources */ = {isa = PBXBuildFile; fileRef = C4DC87231ADC95A00090DD75 /* science4.png */; };
@@ -50,8 +50,8 @@
 		1FA856171AD7464500A2A2A7 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleViewController.swift; sourceTree = "<group>"; };
 		1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadgeViewController.swift; sourceTree = "<group>"; };
-		1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		53BA31A71ADC86FE004BF0CB /* database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
+		53BBD5861AE0350D00CB3105 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		C4DC87201ADC94970090DD75 /* images.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = images.png; sourceTree = "<group>"; };
 		C4DC87221ADC95A00090DD75 /* images-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "images-1.png"; sourceTree = "<group>"; };
 		C4DC87231ADC95A00090DD75 /* science4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = science4.png; sourceTree = "<group>"; };
@@ -111,7 +111,7 @@
 				1FA856171AD7464500A2A2A7 /* StatusViewController.swift */,
 				1FA856191AD7468A00A2A2A7 /* ArticleViewController.swift */,
 				1FA8561B1AD746DA00A2A2A7 /* BadgeViewController.swift */,
-				1FA8561D1AD746E600A2A2A7 /* StoryViewController.swift */,
+				53BBD5861AE0350D00CB3105 /* StoryViewController.swift */,
 				53BA31A71ADC86FE004BF0CB /* database.swift */,
 				1F2E56B31ADC966600C11B19 /* Story.swift */,
 				1F2E56B11ADC958000C11B19 /* NewsStories.swift */,
@@ -248,11 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FA8561E1AD746E600A2A2A7 /* StoryViewController.swift in Sources */,
 				1FA856181AD7464500A2A2A7 /* StatusViewController.swift in Sources */,
 				1F2E56B21ADC958000C11B19 /* NewsStories.swift in Sources */,
 				53BA31A81ADC86FE004BF0CB /* database.swift in Sources */,
 				1FA8561A1AD7468A00A2A2A7 /* ArticleViewController.swift in Sources */,
+				53BBD5871AE0350D00CB3105 /* StoryViewController.swift in Sources */,
 				1FA8561C1AD746DA00A2A2A7 /* BadgeViewController.swift in Sources */,
 				1FA855F81AD73F5400A2A2A7 /* AppDelegate.swift in Sources */,
 				1F2E56B41ADC966600C11B19 /* Story.swift in Sources */,

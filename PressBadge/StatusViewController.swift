@@ -7,7 +7,7 @@
 //  Assisted by Kenneth Michael
 
 import UIKit
-
+/*
 class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     override func viewDidLoad() {
@@ -24,3 +24,4 @@ class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
 
 }
+*/
