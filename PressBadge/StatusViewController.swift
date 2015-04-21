@@ -10,6 +10,8 @@ import UIKit
 
 class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var image: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +25,20 @@ class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     @IBOutlet weak var badgeStatusTable: UITableView!
     
+    let badges = ["Life1badge.png", "Life2badge.png", "Life3badge.png"];
+
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return badges.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = badgeStatusTable.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
+        return cell
+    }
 
 }
