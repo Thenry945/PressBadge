@@ -10,7 +10,10 @@ import UIKit
 
 class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    @IBOutlet weak var image: UIView!
+
+    @IBOutlet weak var badgeStatusTable: UITableView!
+    
+    let badges = ["Science 1", "Life 1", "Health 1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +23,6 @@ class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         
     }
-    
-    @IBOutlet weak var badgeStatusTable: UITableView!
-    
-    let badges = ["Life1badge.png", "Life2badge.png", "Life3badge.png"];
-
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1

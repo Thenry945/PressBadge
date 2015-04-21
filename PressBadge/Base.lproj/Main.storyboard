@@ -44,7 +44,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="badgeStatusTable" destination="dp5-po-RKj" id="cw5-G1-cg0"/>
+                        <outlet property="badgeStatusTable" destination="dp5-po-RKj" id="gzu-4C-Bm9"/>
                         <segue destination="eiR-V9-diF" kind="show" identifier="toArticle" id="Hw6-2E-jd0"/>
                     </connections>
                 </viewController>
@@ -133,17 +133,15 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Nec-zI-LUz">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZMS-f0-nGj">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="badgeCell" id="SkU-ri-1V2">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SkU-ri-1V2" id="b8k-nQ-Omk">
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZMS-f0-nGj">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
-                                                </imageView>
-                                            </subviews>
-                                        </tableViewCellContentView>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SkU-ri-1V2" id="b8k-nQ-Omk"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -158,6 +156,10 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="badgeStatusTable" destination="Nec-zI-LUz" id="IcR-Op-JbL"/>
+                        <outlet property="image" destination="ZMS-f0-nGj" id="KRE-pu-4BZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h9C-Ft-GKp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
