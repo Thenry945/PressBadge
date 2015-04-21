@@ -126,9 +126,7 @@
 		1FA855E91AD73F5400A2A2A7 = {
 			isa = PBXGroup;
 			children = (
-
 				C4C6282E1AE0980700290530 /* Default-568h@2x.png */,
-
 				1FA855F41AD73F5400A2A2A7 /* PressBadge */,
 				1FA8560A1AD73F5400A2A2A7 /* PressBadgeTests */,
 				1FA855F31AD73F5400A2A2A7 /* Products */,
@@ -313,10 +311,13 @@
 				C4C6285E1AE09C6900290530 /* Sports1badge.png in Resources */,
 				1FA856021AD73F5400A2A2A7 /* LaunchScreen.xib in Resources */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				1F06BA331AE6C2AB00EFE1EA /* Default-568h@2x.png in Resources */,
 				C4DC87251ADC95A00090DD75 /* images-1.png in Resources */,
 				C4DC87261ADC95A00090DD75 /* science4.png in Resources */,
 =======
+=======
+>>>>>>> origin/UIBadgeViewLogic
 				C4C628611AE09C6900290530 /* Sports4badge.png in Resources */,
 				C4C6285C1AE09C6900290530 /* Science4badge.png in Resources */,
 				C4C628571AE09C6900290530 /* Politics4badge.png in Resources */,
@@ -328,6 +329,9 @@
 				C4C6284C1AE09C6900290530 /* Life3badge.png in Resources */,
 				C4C6285A1AE09C6900290530 /* Science2badge.png in Resources */,
 				C4C6285D1AE09C6900290530 /* Science5badge.png in Resources */,
+<<<<<<< HEAD
+>>>>>>> origin/UIBadgeViewLogic
+=======
 >>>>>>> origin/UIBadgeViewLogic
 				1FA855FF1AD73F5400A2A2A7 /* Images.xcassets in Resources */,
 			);

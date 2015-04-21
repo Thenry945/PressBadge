@@ -27,11 +27,19 @@ class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     let badges = ["Life1badge.png", "Life2badge.png", "Life3badge.png"];
 
+<<<<<<< HEAD
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
+=======
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+>>>>>>> origin/UIBadgeViewLogic
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return badges.count
     }
