@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F06BA331AE6C2AB00EFE1EA /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F06BA321AE6C2AB00EFE1EA /* Default-568h@2x.png */; };
 		1F2E56B21ADC958000C11B19 /* NewsStories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E56B11ADC958000C11B19 /* NewsStories.swift */; };
 		1F2E56B41ADC966600C11B19 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2E56B31ADC966600C11B19 /* Story.swift */; };
 		1FA855F81AD73F5400A2A2A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA855F71AD73F5400A2A2A7 /* AppDelegate.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F06BA321AE6C2AB00EFE1EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1F2E56B11ADC958000C11B19 /* NewsStories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsStories.swift; sourceTree = "<group>"; };
 		1F2E56B31ADC966600C11B19 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
 		1FA855F21AD73F5400A2A2A7 /* PressBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		1FA855E91AD73F5400A2A2A7 = {
 			isa = PBXGroup;
 			children = (
+				1F06BA321AE6C2AB00EFE1EA /* Default-568h@2x.png */,
 				1FA855F41AD73F5400A2A2A7 /* PressBadge */,
 				1FA8560A1AD73F5400A2A2A7 /* PressBadgeTests */,
 				1FA855F31AD73F5400A2A2A7 /* Products */,
@@ -225,6 +228,7 @@
 			files = (
 				1FA855FD1AD73F5400A2A2A7 /* Main.storyboard in Resources */,
 				1FA856021AD73F5400A2A2A7 /* LaunchScreen.xib in Resources */,
+				1F06BA331AE6C2AB00EFE1EA /* Default-568h@2x.png in Resources */,
 				C4DC87251ADC95A00090DD75 /* images-1.png in Resources */,
 				C4DC87261ADC95A00090DD75 /* science4.png in Resources */,
 				1FA855FF1AD73F5400A2A2A7 /* Images.xcassets in Resources */,

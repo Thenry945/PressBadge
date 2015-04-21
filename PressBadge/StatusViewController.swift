@@ -14,6 +14,8 @@ class StatusViewController: UIViewController, UITableViewDelegate, UITableViewDa
         super.viewDidLoad()
 
     }
+    
+    
 
     @IBAction func unwindSegue(segue: UIStoryboardSegue) {
         
