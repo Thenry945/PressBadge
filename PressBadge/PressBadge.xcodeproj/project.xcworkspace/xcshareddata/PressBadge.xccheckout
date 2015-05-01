@@ -14,11 +14,11 @@
 		<string>github.com:Thenry945/PressBadge.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PressBadge.xcodeproj</string>
+	<string>PressBadge/PressBadge.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4F8982BF94D3C97B6BD5CD5AC6AA3AA9098044DB</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>github.com:Thenry945/PressBadge.git</string>

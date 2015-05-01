@@ -18,7 +18,6 @@ class ArticlesViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        println("The part string contains " + part!)
         if (part?.hasPrefix("Science") != nil && part?.hasPrefix("Science") == true) {
             urlString = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=Science&api-key=379f80bbdce5bde2ca5619951803bbea:16:71569476"
         }

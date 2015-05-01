@@ -58,14 +58,12 @@ class ProgressBarViewController: UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-        println("prepareForSegue called")
         if ( segue.identifier == "CategoriesToArticles") {
             // Create an instance of PlayerTableViewController and pass the variable
             
             var destinationVC = segue.destinationViewController as! ArticlesViewController
             
             destinationVC.part = selectedCategory
-            println(selectedCategory + "is selected story")
         }
     }
     
