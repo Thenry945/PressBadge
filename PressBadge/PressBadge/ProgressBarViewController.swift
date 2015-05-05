@@ -72,13 +72,12 @@ class ProgressBarViewController: UITableViewController {
     override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         
         let selected = categories[indexPath.row]
-        
-        
-        
+    
+//        
 //        for (Science) in categories {
 //            println("This is \(Science)")
 //        }
-        
+//        
 //        for selected: String in earned {
 //            return false;
 //        }
@@ -95,7 +94,7 @@ class ProgressBarViewController: UITableViewController {
 //            return false;
 //            
 //        }
-        return true
+//        return true
     
     }
 }
