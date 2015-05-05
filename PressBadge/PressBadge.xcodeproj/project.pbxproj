@@ -17,6 +17,7 @@
 		1FCE1E611AF13E25004EA8B1 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1E601AF13E24004EA8B1 /* StoryViewController.swift */; };
 		1FCE1E631AF13E57004EA8B1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1E621AF13E57004EA8B1 /* Story.swift */; };
 		1FCE1E651AF13E69004EA8B1 /* NewsStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */; };
+		53B5959F1AF8627600F92C02 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B5959E1AF8627600F92C02 /* ProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1FCE1E601AF13E24004EA8B1 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		1FCE1E621AF13E57004EA8B1 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../Story.swift; sourceTree = "<group>"; };
 		1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
+		53B5959E1AF8627600F92C02 /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = ../../../../Documents/ProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				1F5D8BCA1AF30CCA009D4D1E /* ProgressBarViewController.swift */,
 				1FCE1E621AF13E57004EA8B1 /* Story.swift */,
 				1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */,
+				53B5959E1AF8627600F92C02 /* ProgressView.swift */,
 			);
 			path = PressBadge;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				1F5D8BCB1AF30CCA009D4D1E /* ProgressBarViewController.swift in Sources */,
 				1FCE1E5F1AF13E10004EA8B1 /* ArticlesViewController.swift in Sources */,
 				1FCE1E651AF13E69004EA8B1 /* NewsStory.swift in Sources */,
+				53B5959F1AF8627600F92C02 /* ProgressView.swift in Sources */,
 				1FCE1E3F1AF13DED004EA8B1 /* AppDelegate.swift in Sources */,
 				1FCE1E631AF13E57004EA8B1 /* Story.swift in Sources */,
 			);
