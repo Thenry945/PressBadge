@@ -24,6 +24,7 @@ class StoryViewController: UIViewController {
             var url = story!.webURL
             UIWebView.loadRequest(webView)(NSURLRequest(URL: NSURL(string: url)!))
         }
+     
     }
 
 

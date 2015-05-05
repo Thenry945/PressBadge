@@ -14,6 +14,8 @@ class ProgressBarViewController: UITableViewController {
     
     var categories: [String] = ["Science I", "Life I", "Local I", "Politics I", "Sports I", "Science II", "Life II", "Local II", "Politics II","Sports II", "Science III", "Life III", "Local III", "Politics III", "Sports III", "Science IV", "Life IV", "Local IV", "Politics IV", "Sports IV", "Science V", "Life V", "Local V", "Politics V", "Sports V"]
     
+    var earned: [String] = ["Sports II", "Science III", "Life III", "Local III", "Politics III"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -67,6 +69,33 @@ class ProgressBarViewController: UITableViewController {
         }
     }
     
+    override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+        
+        let selected = categories[indexPath.row]
+        
+        
+        
+//        for (Science) in categories {
+//            println("This is \(Science)")
+//        }
+        
+//        for selected: String in earned {
+//            return false;
+//        }
+//        else{
+//            return true;
+//        }
+//        
+//        if (selected == "Sports II"){
+//    
+//            return true;
+//        }
+//        else{
+//            
+//            return false;
+//            
+//        }
+        return true
     
-    
+    }
 }
