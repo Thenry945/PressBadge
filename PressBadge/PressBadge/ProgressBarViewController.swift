@@ -94,7 +94,7 @@ class ProgressBarViewController: UITableViewController {
 //            return false;
 //            
 //        }
-//        return true
+       return true
     
     }
 }

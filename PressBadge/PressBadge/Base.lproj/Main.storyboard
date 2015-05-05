@@ -7,7 +7,7 @@
         <!--Earned-->
         <scene sceneID="96g-q6-jWW">
             <objects>
-                <tableViewController id="quy-sE-wM1" sceneMemberID="viewController">
+                <tableViewController id="quy-sE-wM1" customClass="EarnedViewController" customModule="PressBadge" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZjP-aW-yJu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
