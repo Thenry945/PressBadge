@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4UK-PR-qGL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Earned-->
@@ -42,12 +43,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCategories" id="Xec-go-qBM">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCategories" id="Xec-go-qBM" customClass="ProgressTableViewCell" customModule="PressBadge" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xec-go-qBM" id="RYt-xo-3Jw">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="sU8-ct-xjC">
+                                            <rect key="frame" x="434" y="21" width="150" height="2"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="150" id="Ri8-v1-6hO"/>
+                                            </constraints>
+                                        </progressView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="sU8-ct-xjC" secondAttribute="centerY" id="BNA-SV-NVu"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="sU8-ct-xjC" secondAttribute="trailing" constant="8" id="xYN-87-yxr"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="progressBar" destination="sU8-ct-xjC" id="MzE-HR-A9m"/>
                                     <segue destination="wqw-3R-SmL" kind="show" identifier="CategoriesToArticles" id="Caz-2k-es6"/>
                                 </connections>
                             </tableViewCell>

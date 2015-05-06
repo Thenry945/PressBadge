@@ -18,7 +18,7 @@ class ProgressBarViewController: UITableViewController {
         super.viewDidLoad()
         
         
-        self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellCategories")
+        //self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellCategories")
         
     }
     //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
@@ -35,10 +35,11 @@ class ProgressBarViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        
-        var cell = tableView.dequeueReusableCellWithIdentifier("cellCategories") as! UITableViewCell
+        var cell = tableView.dequeueReusableCellWithIdentifier("cellCategories") as! ProgressTableViewCell
         
         cell.textLabel!.text = categories[indexPath.row]
+        
+        cell.progressBar.setProgress(0.0, animated: false)
         
         return cell
     }
