@@ -32,14 +32,25 @@ class ProgressBarViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.categories.count;
     }
-    
+    var science = 0.5
+    var local = 0.3
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        var selected = 0.0
         
         var cell = tableView.dequeueReusableCellWithIdentifier("cellCategories") as! ProgressTableViewCell
         
         cell.textLabel!.text = categories[indexPath.row]
-        
-        cell.progressBar.setProgress(0.0, animated: false)
+        println(categories[indexPath.row])
+        let rowValue = categories[indexPath.row]
+        if rowValue == "Science I" {
+            selected = science
+        }
+        else if rowValue == "Local I" {
+            selected = local
+        }
+
+        cell.progressBar.setProgress(Float(selected), animated: false)
         
         return cell
     }
