@@ -3,6 +3,7 @@
 //  TableViewImages
 //
 //  Created by Summer Storie on 4/25/15.
+//  Created by Kenneth && Travis
 //  Copyright (c) 2015 Summer Storie. All rights reserved.
 //
 
@@ -12,25 +13,17 @@ class ProgressBarViewController: UITableViewController {
     
     var selectedCategory = ""
     
-    var categories: [String] = ["Science I", "Life I", "Local I", "Politics I", "Sports I", "Science II", "Life II", "Local II", "Politics II","Sports II", "Science III", "Life III", "Local III", "Politics III", "Sports III", "Science IV", "Life IV", "Local IV", "Politics IV", "Sports IV", "Science V", "Life V", "Local V", "Politics V", "Sports V"]
+    var categories: [String] = ["Science", "Life", "Local", "Politics", "Sports"]
     
-    var earned: [String] = ["Sports II", "Science III", "Life III", "Local III", "Politics III"]
+    var earnedBadges = ["Science1", "Life1", "Sports1"] //this will need to be .appended by kenneth when progress bar reaches 100%, this array will be appended.
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         self.tableView.registerClass(UITableViewCell.self, forCellReuseIdentifier: "cellCategories")
         
     }
-    //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
-    //        if (segue.identifier == "toStories") {
-    //            var svc = segue.destinationViewController as! StoryViewController;
-    //
-    //            svc.toPass = categories[
-    //
-    //        }
-    //    }
+  
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.categories.count;
     }
@@ -67,33 +60,17 @@ class ProgressBarViewController: UITableViewController {
             
             destinationVC.part = selectedCategory
         }
+        else if( segue.identifier == "EarnedViewController"){
+             var destinationVC = segue.destinationViewController as! EarnedViewController
+            
+            destinationVC.earnedBadge = earnedBadges
+        }
     }
     
     override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {
         
-        let selected = categories[indexPath.row]
+       let selected = categories[indexPath.row]
     
-//        
-//        for (Science) in categories {
-//            println("This is \(Science)")
-//        }
-//        
-//        for selected: String in earned {
-//            return false;
-//        }
-//        else{
-//            return true;
-//        }
-//        
-//        if (selected == "Sports II"){
-//    
-//            return true;
-//        }
-//        else{
-//            
-//            return false;
-//            
-//        }
        return true
     
     }

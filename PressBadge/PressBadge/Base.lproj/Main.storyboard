@@ -46,6 +46,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xec-go-qBM" id="RYt-xo-3Jw">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mfa-DD-KqY">
+                                            <rect key="frame" x="225" y="21" width="150" height="2"/>
+                                        </progressView>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="wqw-3R-SmL" kind="show" identifier="CategoriesToArticles" id="Caz-2k-es6"/>
@@ -61,7 +66,7 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="0Aw-kh-pix"/>
                         <barButtonItem key="rightBarButtonItem" title="Earned" id="rIl-iY-M0S">
                             <connections>
-                                <segue destination="quy-sE-wM1" kind="show" id="mZ8-cY-onk"/>
+                                <segue destination="quy-sE-wM1" kind="show" identifier="EarnedViewController" id="mZ8-cY-onk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

@@ -3,6 +3,8 @@
 //  PressBadge
 //
 //  Created by Travis Henrichs on 4/29/15.
+//  Created by Summer Storie
+//  Created by Kenneth Michael
 //  Copyright (c) 2015 Travis Henrichs. All rights reserved.
 //
 
@@ -26,6 +28,7 @@ class StoryViewController: UIViewController {
         }
      
     }
+    
 
 
 }

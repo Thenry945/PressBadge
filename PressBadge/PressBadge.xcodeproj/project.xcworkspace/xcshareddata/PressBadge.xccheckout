@@ -7,21 +7,21 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>328F9995-7164-4912-9BAD-708BE325DF96</string>
 	<key>IDESourceControlProjectName</key>
-	<string>PressBadge</string>
+	<string>project</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>4F8982BF94D3C97B6BD5CD5AC6AA3AA9098044DB</key>
-		<string>github.com:Thenry945/PressBadge.git</string>
+		<string>https://github.com/Thenry945/PressBadge.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>PressBadge/PressBadge.xcodeproj</string>
+	<string>PressBadge/PressBadge.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4F8982BF94D3C97B6BD5CD5AC6AA3AA9098044DB</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>github.com:Thenry945/PressBadge.git</string>
+	<string>https://github.com/Thenry945/PressBadge.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>4F8982BF94D3C97B6BD5CD5AC6AA3AA9098044DB</string>
 			<key>IDESourceControlWCCName</key>
-			<string>PressBadge</string>
+			<string>BadgeView:Lock-Cell-logic</string>
 		</dict>
 	</array>
 </dict>
