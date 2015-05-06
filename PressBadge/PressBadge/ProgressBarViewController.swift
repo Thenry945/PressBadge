@@ -15,7 +15,7 @@ class ProgressBarViewController: UITableViewController {
     
     var categories: [String] = ["Science", "Life", "Local", "Politics", "Sports"]
     
-    var earnedBadges = ["Science1", "Life1", "Sports1"] //this will need to be .appended by kenneth when progress bar reaches 100%, this array will be appended.
+    var earnedBadges = ["Science 1", "Life 1", "Sports 1"] //this will need to be .appended by kenneth when progress bar reaches 100%, this array will be appended.
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,12 +9,12 @@
 import UIKit
 
 class EarnedViewController: UITableViewController {
-
+    
     var earnedBadge: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         
     }
     
@@ -26,11 +26,11 @@ class EarnedViewController: UITableViewController {
         
         var cell = tableView.dequeueReusableCellWithIdentifier("cell") as! UITableViewCell
         
-       
-            cell.textLabel!.text = earnedBadge[indexPath.row]
-            
-                        var imageName = UIImage(named: earnedBadge[indexPath.row])
-        cell.imageView!.image = UIImage(named: earnedBadge[indexPath.row])
+        
+        cell.textLabel!.text = earnedBadge[indexPath.row]
+        
+        var imageName = UIImage(named: earnedBadge[indexPath.row])
+        cell.imageView!.image = imageName
         
         
         return cell
@@ -39,6 +39,19 @@ class EarnedViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("You selected cell #\(indexPath.row)!")
     }
-
-
+    
+    //    func locationSwitchToggled() {
+    //        reminder!.locationOn = !(reminder!.locationOn)
+    //
+    //        var indexPath: [NSIndexPath!] = [NSIndexPath(forRow: 1, inSection: 2)]
+    //
+    //        tableView.beginUpdates()
+    //        if reminder!.locationOn {
+    //            tableView.insertRowsAtIndexPaths(indexPath, withRowAnimation: .Fade)
+    //        } else {
+    //            tableView.deleteRowsAtIndexPaths(indexPath, withRowAnimation: .Fade)
+    //        }
+    //        tableView.endUpdates()
+    //    }
+    
 }
