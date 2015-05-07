@@ -29,8 +29,8 @@ class EarnedViewController: UITableViewController {
        
             cell.textLabel!.text = earnedBadge[indexPath.row]
             
-                        var imageName = UIImage(named: earnedBadge[indexPath.row])
-        cell.imageView!.image = UIImage(named: earnedBadge[indexPath.row])
+            var imageName = UIImage(named: earnedBadge[indexPath.row])
+            cell.imageView!.image = UIImage(named: earnedBadge[indexPath.row])
         
         
         return cell

@@ -18,6 +18,7 @@
 		1FCE1E631AF13E57004EA8B1 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1E621AF13E57004EA8B1 /* Story.swift */; };
 		1FCE1E651AF13E69004EA8B1 /* NewsStory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */; };
 		C4F1D3031AF8637B008636B1 /* EarnedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F1D3021AF8637B008636B1 /* EarnedViewController.swift */; };
+		C4F6A8E01AFAE3B700C5F138 /* ProgressTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4F6A8DF1AFAE3B700C5F138 /* ProgressTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		1FCE1E621AF13E57004EA8B1 /* Story.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Story.swift; path = ../Story.swift; sourceTree = "<group>"; };
 		1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsStory.swift; sourceTree = "<group>"; };
 		C4F1D3021AF8637B008636B1 /* EarnedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarnedViewController.swift; sourceTree = "<group>"; };
+		C4F6A8DF1AFAE3B700C5F138 /* ProgressTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				1FCE1E621AF13E57004EA8B1 /* Story.swift */,
 				1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */,
 				C4F1D3021AF8637B008636B1 /* EarnedViewController.swift */,
+				C4F6A8DF1AFAE3B700C5F138 /* ProgressTableViewCell.swift */,
 			);
 			path = PressBadge;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				1FCE1E651AF13E69004EA8B1 /* NewsStory.swift in Sources */,
 				1FCE1E3F1AF13DED004EA8B1 /* AppDelegate.swift in Sources */,
 				1FCE1E631AF13E57004EA8B1 /* Story.swift in Sources */,
+				C4F6A8E01AFAE3B700C5F138 /* ProgressTableViewCell.swift in Sources */,
 				C4F1D3031AF8637B008636B1 /* EarnedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,6 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PressBadge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,6 +378,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PressBadge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
