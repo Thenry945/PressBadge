@@ -12,9 +12,6 @@ class DataHandler: NSObject {
 
     class func getCategories() -> [Category] {
         
-//        //so something for it to not exist, nskeytoarchiver
-        
-       // if let LibraryOptions
         let libraryURLDirecories:NSArray = NSFileManager.defaultManager().URLsForDirectory(.LibraryDirectory, inDomains: .UserDomainMask)
         let libraryURLOptional = libraryURLDirecories.lastObject as? NSURL
         if let libraryURL = libraryURLOptional {
@@ -30,11 +27,7 @@ class DataHandler: NSObject {
                 return stuff
             }
         }
-//
-//        let episodes = NSKeyedUnarchiver.unarchiveObjectWithFile("categories.swift"!) as! [Episode] //file directory needs to be where categories is ideally categories.data or whatever
-//        return episodes //if this works this is returned instead
-//        
-//        return [Category]() //that's in case everything fails
+
         return [Category]()
     }
     
@@ -58,9 +51,9 @@ class DataHandler: NSObject {
     }
     
     class func loadCategoriesFromBundle() -> NSData {
-        var libraryPath = libraryURL.path?.stringByAppendingPathComponent("data")
         var error:NSErrorPointer?
-        let pathForDataFromBundle = libraryPath
+        let mainBundle = NSBundle.mainBundle()
+        let pathForDataFromBundle = mainBundle.pathForResource("categories", ofType: "swift")
         let dataFromBundle = NSFileManager.defaultManager().contentsAtPath(pathForDataFromBundle!)
         return dataFromBundle!
     }
