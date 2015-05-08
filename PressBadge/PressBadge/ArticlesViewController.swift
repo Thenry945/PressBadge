@@ -67,6 +67,7 @@ class ArticlesViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let destinationViewController = segue.destinationViewController as! StoryViewController
         destinationViewController.story = selectedStory;
+        destinationViewController.badge = part;
     }
 
 

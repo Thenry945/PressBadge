@@ -49,7 +49,7 @@ class ProgressBarViewController: UITableViewController {
         else if rowValue == "Local I" {
             selected = local
         }
-
+    
         cell.progressBar.setProgress(Float(selected), animated: false)
         
         return cell
