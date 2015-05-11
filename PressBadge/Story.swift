@@ -3,6 +3,7 @@
 //  PressBadge
 //
 //  Created by Travis Henrichs on 4/29/15.
+//  Created by Summer & Kenneth, too!
 //  Copyright (c) 2015 Travis Henrichs. All rights reserved.
 //
 

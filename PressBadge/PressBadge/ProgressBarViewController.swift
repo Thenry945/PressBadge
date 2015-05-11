@@ -9,100 +9,79 @@
 import UIKit
 
 class ProgressBarViewController: UITableViewController {
-
-    var categories = [Category]()
     
     var selectedCategory = ""
     
-    var earnedBadges: [String] = ["Science 1"]
-
+    var categories: [String] = ["Science I", "Life I", "Local I", "Politics I", "Sports I", "Science II", "Life II", "Local II", "Politics II","Sports II", "Science III", "Life III", "Local III", "Politics III", "Sports III", "Science IV", "Life IV", "Local IV", "Politics IV", "Sports IV", "Science V", "Life V", "Local V", "Politics V", "Sports V"]
+    var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        categories = DataHandler.getCategories()
-        tableView.reloadData()
-            //NSKeyedArchiver.archiveRootObject(categories, toFile: "categories.swift")
-//        
-//            let porgressOfUser:[Category] = NSKeyedUnarchiver.unarchiveObjectWithFile("categories.swift") as! [Category]
-//            println(porgressOfUser)
-    
-//        if let UserProgress = NSUserDefaults.standardUserDefaults().objectForKey("title") as? NSData {
-//            let title: AnyObject? = NSKeyedUnarchiver.unarchiveObjectWithData(UserProgress)
-//        }
-        
     }
-    
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return categories.count;
-        
+        return self.BadgeLevels.count;
     }
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-       
-        var selected = 0.0
-
+        
+        var selected : Float = 0.0
+        
         var cell = tableView.dequeueReusableCellWithIdentifier("cellCategories") as! ProgressTableViewCell
-        let cat = categories[indexPath.row]
-        cell.textLabel!.text = cat.title
-       
-        if let UserProgress = NSUserDefaults.standardUserDefaults().objectForKey("title") as? NSData {
-            let title: AnyObject? = NSKeyedUnarchiver.unarchiveObjectWithData(UserProgress)
+        
+        cell.textLabel!.text = BadgeLevels[indexPath.row]
+        println(BadgeLevels[indexPath.row])
+        var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+        let rowValue = BadgeLevels[indexPath.row]
+        //Sports 1", "Science 1", "Local 1", "Life 1", "Politics 1
+        if (rowValue.hasPrefix("Sports") == true ) {
+            selected = BadgeProgress[0]
+        }
+        else if (rowValue.hasPrefix("Science") == true ) {
+            selected = BadgeProgress[1]
+        }
+        else if (rowValue.hasPrefix("Local") == true ) {
+            selected = BadgeProgress[2]
+        }
+        else if (rowValue.hasPrefix("Life") == true ) {
+            selected = BadgeProgress[3]
+        }
+        else if (rowValue.hasPrefix("Politics") == true ) {
+            selected = BadgeProgress[4]
         }
         
-        let rowValue = categories[indexPath.row]
+        //var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+        cell.progressBar.setProgress(selected, animated: false)
         
-        
-//        let rowValue = badges[indexPath.row]
-//        if rowValue == "Science 1" {
-//            selected = science
-//        }
-//        else if rowValue == "Local 1" {
-//            selected = local
-//        }
-//        
-        
-        //take categories[indexPath.row] and check where progress bar is, once we figure that out, get progressbar progress from datasource
-        
-        cell.progressBar.setProgress(Float(selected), animated: false)
-
-       return cell
-        
+        return cell
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         println("You selected cell #\(indexPath.row)!")
         
-
-        let selected = categories[indexPath.row]
-        selectedCategory = selected.title
+        // Create a variable that you want to send based on the destination view controller
+        // You can get a reference to the data by using indexPath shown below
+        selectedCategory = BadgeLevels[indexPath.row]
         
         self.performSegueWithIdentifier("CategoriesToArticles", sender: self)
+        
+        // Let's assume that the segue name is called playerSegue
+        // This will perform the segue and pre-load the variable for you to use
         
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if ( segue.identifier == "CategoriesToArticles") {
+            // Create an instance of PlayerTableViewController and pass the variable
             
             var destinationVC = segue.destinationViewController as! ArticlesViewController
             
             destinationVC.part = selectedCategory
         }
-        else if( segue.identifier == "EarnedViewController"){
-            var destinationVC = segue.destinationViewController as! EarnedViewController
-            
-            destinationVC.earnedBadge = earnedBadges
-        }
-        
     }
     
-//    override func tableView(tableView: UITableView, shouldHighlightRowAtIndexPath indexPath: NSIndexPath) -> Bool {}
-
-//    Alert code for IOS8
-//    var alert = UIAlertController(title: "Hey", message: "This is  one Alert", preferredStyle: UIAlertControllerStyle.Alert)
-//    alert.addAction(UIAlertAction(title: "Working!!", style: UIAlertActionStyle.Default, handler: nil))
-//    self.presentViewController(alert, animated: true, completion: nil)
+    
+    
 }
-
-
-
-
