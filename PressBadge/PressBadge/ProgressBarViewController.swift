@@ -13,7 +13,11 @@ class ProgressBarViewController: UITableViewController {
     var selectedCategory = ""
     
     var categories: [String] = ["Science I", "Life I", "Local I", "Politics I", "Sports I", "Science II", "Life II", "Local II", "Politics II","Sports II", "Science III", "Life III", "Local III", "Politics III", "Sports III", "Science IV", "Life IV", "Local IV", "Politics IV", "Sports IV", "Science V", "Life V", "Local V", "Politics V", "Sports V"]
-    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -32,25 +36,18 @@ class ProgressBarViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.categories.count;
     }
-    var science = 0.5
-    var local = 0.3
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        var selected = 0.0
         
         var cell = tableView.dequeueReusableCellWithIdentifier("cellCategories") as! ProgressTableViewCell
         
         cell.textLabel!.text = categories[indexPath.row]
         println(categories[indexPath.row])
-        let rowValue = categories[indexPath.row]
-        if rowValue == "Science I" {
-            selected = science
-        }
-        else if rowValue == "Local I" {
-            selected = local
-        }
-    
-        cell.progressBar.setProgress(Float(selected), animated: false)
+        
+        var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+        var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+        var selected = BadgeProgress[1]
+        cell.progressBar.setProgress(selected, animated: false)
         
         return cell
     }

@@ -11,40 +11,154 @@ import UIKit
 class StoryViewController: UIViewController {
 
     var story: Story?
-    var test = 0.5
     var badge: String?
+    //use these to reset
+    //var BadgeLevels: [String] = ["Sports 1", "Science 1", "Local 1", "Life 1", "Politics 1"]
+ //   var BadgeProgress = [Float](count: 5, repeatedValue: 0.0)
+    
     @IBOutlet weak var webView: UIWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        println(badge)
-        var timer = NSTimer.scheduledTimerWithTimeInterval(15, target: self, selector: "update", userInfo: nil, repeats: false)
+        var timer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "update", userInfo: nil, repeats: false)
         if (story != nil){
             
             self.navigationItem.title = story?.section
-            
             var url = story!.webURL
             UIWebView.loadRequest(webView)(NSURLRequest(URL: NSURL(string: url)!))
             
         }
 
     }
+    
+    //Sports 1", "Science 1", "Local 1", "Life 1", "Politics 1
     func update() {
         if (badge?.hasPrefix("Science") == true ) {
-            test = 0.9
-            println(test)
-        }
-        else if (badge?.hasPrefix("Politics") == true ) {
             
+            var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+            var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+            BadgeProgress[1] = BadgeProgress[1] + 0.2
+            //BadgeProgress[1] = 0.0
+            if (BadgeProgress[1] >= 1.0) {
+                BadgeProgress[1] = 0.0
+                if BadgeLevels[1] == "Science 1" {
+                    BadgeLevels[1] = "Science 2"
+                }
+                else if BadgeLevels[1] == "Science 2" {
+                    BadgeLevels[1] = "Science 3"
+                }
+                else if BadgeLevels[1] == "Science 3" {
+                    BadgeLevels[1] = "Science 4"
+                }
+                else if BadgeLevels[1] == "Science 4" {
+                    BadgeLevels[1] = "Science 5"
+                }
+            }
+            NSUserDefaults.standardUserDefaults().setObject(BadgeProgress, forKey: "BadgeProgress")
+            NSUserDefaults.standardUserDefaults().setObject(BadgeLevels, forKey: "BadgeLevels")
+            println(BadgeProgress)
+            println(BadgeLevels)
+        }
+            
+        else if (badge?.hasPrefix("Politics") == true ) {
+            var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+            var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+            BadgeProgress[4] = BadgeProgress[4] + 0.2
+            //BadgeProgress[4] = 0.0
+            if (BadgeProgress[4] >= 1.0) {
+                BadgeProgress[4] = 0.0
+                if BadgeLevels[4] == "Politics 1" {
+                    BadgeLevels[4] = "Politics 2"
+                }
+                else if BadgeLevels[4] == "Politics 2" {
+                    BadgeLevels[4] = "Politics 3"
+                }
+                else if BadgeLevels[4] == "Politics 3" {
+                    BadgeLevels[4] = "Politics 4"
+                }
+                else if BadgeLevels[4] == "Politics 4" {
+                    BadgeLevels[4] = "Politics 5"
+                }
+            }
+            NSUserDefaults.standardUserDefaults().setObject(BadgeProgress, forKey: "BadgeProgress")
+            NSUserDefaults.standardUserDefaults().setObject(BadgeLevels, forKey: "BadgeLevels")
+            println(BadgeProgress)
+            println(BadgeLevels)
         }
         else if (badge?.hasPrefix("Life") == true ){
-            
+            var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+            var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+            BadgeProgress[3] = BadgeProgress[3] + 0.2
+            //BadgeProgress[3] = 0.0
+            if (BadgeProgress[3] >= 1.0) {
+                BadgeProgress[3] = 0.0
+                if BadgeLevels[3] == "Life 1" {
+                    BadgeLevels[3] = "Life 2"
+                }
+                else if BadgeLevels[3] == "Life 2" {
+                    BadgeLevels[3] = "Life 3"
+                }
+                else if BadgeLevels[3] == "Life 3" {
+                    BadgeLevels[3] = "Life 4"
+                }
+                else if BadgeLevels[3] == "Life 4" {
+                    BadgeLevels[3] = "Life 5"
+                }
+            }
+            NSUserDefaults.standardUserDefaults().setObject(BadgeProgress, forKey: "BadgeProgress")
+            NSUserDefaults.standardUserDefaults().setObject(BadgeLevels, forKey: "BadgeLevels")
+            println(BadgeProgress)
+            println(BadgeLevels)
         }
         else if (badge?.hasPrefix("Local") == true ) {
-            
+            var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+            var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+            BadgeProgress[2] = BadgeProgress[2] + 0.2
+            //BadgeProgress[2] = 0.0
+            if (BadgeProgress[2] >= 1.0) {
+                BadgeProgress[2] = 0.0
+                if BadgeLevels[2] == "Local 1" {
+                    BadgeLevels[2] = "Local 2"
+                }
+                else if BadgeLevels[2] == "Local 2" {
+                    BadgeLevels[2] = "Local 3"
+                }
+                else if BadgeLevels[2] == "Local 3" {
+                    BadgeLevels[2] = "Local 4"
+                }
+                else if BadgeLevels[2] == "Local 4" {
+                    BadgeLevels[2] = "Local 5"
+                }
+            }
+            NSUserDefaults.standardUserDefaults().setObject(BadgeProgress, forKey: "BadgeProgress")
+            NSUserDefaults.standardUserDefaults().setObject(BadgeLevels, forKey: "BadgeLevels")
+            println(BadgeProgress)
+            println(BadgeLevels)
         }
         else if (badge?.hasPrefix("Sports") == true ) {
-            
+            var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+            var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+            BadgeProgress[0] = BadgeProgress[0] + 0.2
+            //BadgeProgress[0] = 0.0
+            if (BadgeProgress[0] >= 1.0) {
+                BadgeProgress[0] = 0.0
+                if BadgeLevels[0] == "Sports 1" {
+                    BadgeLevels[0] = "Sports 2"
+                }
+                else if BadgeLevels[0] == "Sports 2" {
+                    BadgeLevels[0] = "Sports 3"
+                }
+                else if BadgeLevels[0] == "Sports 3" {
+                    BadgeLevels[0] = "Sports 4"
+                }
+                else if BadgeLevels[0] == "Sports 4" {
+                    BadgeLevels[0] = "Sports 5"
+                }
+            }
+            NSUserDefaults.standardUserDefaults().setObject(BadgeProgress, forKey: "BadgeProgress")
+            NSUserDefaults.standardUserDefaults().setObject(BadgeLevels, forKey: "BadgeLevels")
+            println(BadgeProgress)
+            println(BadgeLevels)
         }
     }
     
