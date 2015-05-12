@@ -194,7 +194,7 @@ class StoryViewController: UIViewController {
         
         let alrtController : UIAlertController = UIAlertController(title: "You've Earned a \(badgeType)!", message: "Check out your badges in Earned", preferredStyle:.Alert)
         
-        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel, handler: dismissAlert)
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Okay", style: .Cancel, handler: dismissAlert)
         
         alrtController.addAction(cancelAction)
         

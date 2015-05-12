@@ -14,11 +14,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="rrC-Lq-TX8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="rrC-Lq-TX8" customClass="EarnedTableViewCell" customModule="PressBadge" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rrC-Lq-TX8" id="L2n-t2-oms">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9x-34-Aqo">
+                                            <rect key="frame" x="225" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-Ys-4z8">
+                                            <rect key="frame" x="172" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-vS-ZqT">
+                                            <rect key="frame" x="331" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Zj-3hL">
+                                            <rect key="frame" x="278" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77s-gs-DnN">
+                                            <rect key="frame" x="390" y="2" width="45" height="39"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image1" destination="9dQ-Ys-4z8" id="X8L-WB-md6"/>
+                                    <outlet property="image2" destination="I9x-34-Aqo" id="fcn-OQ-rgC"/>
+                                    <outlet property="image3" destination="vgb-Zj-3hL" id="os7-sa-c1b"/>
+                                    <outlet property="image4" destination="mtl-vS-ZqT" id="zJl-l9-7Hw"/>
+                                    <outlet property="image5" destination="77s-gs-DnN" id="4GC-Wy-H8h"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
