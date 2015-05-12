@@ -7,6 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0B36881AF99062005F18E5 /* Life1badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B366E1AF99062005F18E5 /* Life1badge.png */; };
+		1F0B36891AF99062005F18E5 /* Life2badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B366F1AF99062005F18E5 /* Life2badge.png */; };
+		1F0B368A1AF99062005F18E5 /* Life3badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36701AF99062005F18E5 /* Life3badge.png */; };
+		1F0B368B1AF99062005F18E5 /* Life4badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36711AF99062005F18E5 /* Life4badge.png */; };
+		1F0B368C1AF99062005F18E5 /* Life5badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36721AF99062005F18E5 /* Life5badge.png */; };
+		1F0B368D1AF99062005F18E5 /* Local1badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36731AF99062005F18E5 /* Local1badge.png */; };
+		1F0B368E1AF99062005F18E5 /* Local2badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36741AF99062005F18E5 /* Local2badge.png */; };
+		1F0B368F1AF99062005F18E5 /* Local3badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36751AF99062005F18E5 /* Local3badge.png */; };
+		1F0B36901AF99062005F18E5 /* Local4badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36761AF99062005F18E5 /* Local4badge.png */; };
+		1F0B36911AF99062005F18E5 /* Local5badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36771AF99062005F18E5 /* Local5badge.png */; };
+		1F0B36921AF99062005F18E5 /* Politics1badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36781AF99062005F18E5 /* Politics1badge.png */; };
+		1F0B36931AF99062005F18E5 /* Politics2badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36791AF99062005F18E5 /* Politics2badge.png */; };
+		1F0B36941AF99062005F18E5 /* Politics3badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B367A1AF99062005F18E5 /* Politics3badge.png */; };
+		1F0B36951AF99062005F18E5 /* Politics4badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B367B1AF99062005F18E5 /* Politics4badge.png */; };
+		1F0B36961AF99062005F18E5 /* Politics5badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B367C1AF99062005F18E5 /* Politics5badge.png */; };
+		1F0B36971AF99062005F18E5 /* Science1badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B367D1AF99062005F18E5 /* Science1badge.png */; };
+		1F0B36981AF99062005F18E5 /* Science2badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B367E1AF99062005F18E5 /* Science2badge.png */; };
+		1F0B36991AF99062005F18E5 /* Science3badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B367F1AF99062005F18E5 /* Science3badge.png */; };
+		1F0B369A1AF99062005F18E5 /* Science4badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36801AF99062005F18E5 /* Science4badge.png */; };
+		1F0B369B1AF99062005F18E5 /* Science5badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36811AF99062005F18E5 /* Science5badge.png */; };
+		1F0B369C1AF99062005F18E5 /* Sports1badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36821AF99062005F18E5 /* Sports1badge.png */; };
+		1F0B369D1AF99062005F18E5 /* Sports2badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36831AF99062005F18E5 /* Sports2badge.png */; };
+		1F0B369E1AF99062005F18E5 /* Sports3badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36841AF99062005F18E5 /* Sports3badge.png */; };
+		1F0B369F1AF99062005F18E5 /* Sports4badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36851AF99062005F18E5 /* Sports4badge.png */; };
+		1F0B36A01AF99062005F18E5 /* Sports5badge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36861AF99062005F18E5 /* Sports5badge.png */; };
+		1F0B36A11AF99062005F18E5 /* Unearnedbadge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F0B36871AF99062005F18E5 /* Unearnedbadge.png */; };
+		1F0B36A31AF990C6005F18E5 /* EarnedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0B36A21AF990C6005F18E5 /* EarnedViewController.swift */; };
 		1F5D8BCB1AF30CCA009D4D1E /* ProgressBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5D8BCA1AF30CCA009D4D1E /* ProgressBarViewController.swift */; };
 		1FCE1E3F1AF13DED004EA8B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FCE1E3E1AF13DED004EA8B1 /* AppDelegate.swift */; };
 		1FCE1E441AF13DED004EA8B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FCE1E421AF13DED004EA8B1 /* Main.storyboard */; };
@@ -30,6 +57,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0B366E1AF99062005F18E5 /* Life1badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Life1badge.png; sourceTree = "<group>"; };
+		1F0B366F1AF99062005F18E5 /* Life2badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Life2badge.png; sourceTree = "<group>"; };
+		1F0B36701AF99062005F18E5 /* Life3badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Life3badge.png; sourceTree = "<group>"; };
+		1F0B36711AF99062005F18E5 /* Life4badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Life4badge.png; sourceTree = "<group>"; };
+		1F0B36721AF99062005F18E5 /* Life5badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Life5badge.png; sourceTree = "<group>"; };
+		1F0B36731AF99062005F18E5 /* Local1badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Local1badge.png; sourceTree = "<group>"; };
+		1F0B36741AF99062005F18E5 /* Local2badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Local2badge.png; sourceTree = "<group>"; };
+		1F0B36751AF99062005F18E5 /* Local3badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Local3badge.png; sourceTree = "<group>"; };
+		1F0B36761AF99062005F18E5 /* Local4badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Local4badge.png; sourceTree = "<group>"; };
+		1F0B36771AF99062005F18E5 /* Local5badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Local5badge.png; sourceTree = "<group>"; };
+		1F0B36781AF99062005F18E5 /* Politics1badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Politics1badge.png; sourceTree = "<group>"; };
+		1F0B36791AF99062005F18E5 /* Politics2badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Politics2badge.png; sourceTree = "<group>"; };
+		1F0B367A1AF99062005F18E5 /* Politics3badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Politics3badge.png; sourceTree = "<group>"; };
+		1F0B367B1AF99062005F18E5 /* Politics4badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Politics4badge.png; sourceTree = "<group>"; };
+		1F0B367C1AF99062005F18E5 /* Politics5badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Politics5badge.png; sourceTree = "<group>"; };
+		1F0B367D1AF99062005F18E5 /* Science1badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Science1badge.png; sourceTree = "<group>"; };
+		1F0B367E1AF99062005F18E5 /* Science2badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Science2badge.png; sourceTree = "<group>"; };
+		1F0B367F1AF99062005F18E5 /* Science3badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Science3badge.png; sourceTree = "<group>"; };
+		1F0B36801AF99062005F18E5 /* Science4badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Science4badge.png; sourceTree = "<group>"; };
+		1F0B36811AF99062005F18E5 /* Science5badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Science5badge.png; sourceTree = "<group>"; };
+		1F0B36821AF99062005F18E5 /* Sports1badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sports1badge.png; sourceTree = "<group>"; };
+		1F0B36831AF99062005F18E5 /* Sports2badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sports2badge.png; sourceTree = "<group>"; };
+		1F0B36841AF99062005F18E5 /* Sports3badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sports3badge.png; sourceTree = "<group>"; };
+		1F0B36851AF99062005F18E5 /* Sports4badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sports4badge.png; sourceTree = "<group>"; };
+		1F0B36861AF99062005F18E5 /* Sports5badge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sports5badge.png; sourceTree = "<group>"; };
+		1F0B36871AF99062005F18E5 /* Unearnedbadge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Unearnedbadge.png; sourceTree = "<group>"; };
+		1F0B36A21AF990C6005F18E5 /* EarnedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EarnedViewController.swift; sourceTree = "<group>"; };
 		1F5D8BCA1AF30CCA009D4D1E /* ProgressBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarViewController.swift; sourceTree = "<group>"; };
 		1FCE1E391AF13DED004EA8B1 /* PressBadge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressBadge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCE1E3D1AF13DED004EA8B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +118,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F0B366D1AF99062005F18E5 /* PNGBadges */ = {
+			isa = PBXGroup;
+			children = (
+				1F0B366E1AF99062005F18E5 /* Life1badge.png */,
+				1F0B366F1AF99062005F18E5 /* Life2badge.png */,
+				1F0B36701AF99062005F18E5 /* Life3badge.png */,
+				1F0B36711AF99062005F18E5 /* Life4badge.png */,
+				1F0B36721AF99062005F18E5 /* Life5badge.png */,
+				1F0B36731AF99062005F18E5 /* Local1badge.png */,
+				1F0B36741AF99062005F18E5 /* Local2badge.png */,
+				1F0B36751AF99062005F18E5 /* Local3badge.png */,
+				1F0B36761AF99062005F18E5 /* Local4badge.png */,
+				1F0B36771AF99062005F18E5 /* Local5badge.png */,
+				1F0B36781AF99062005F18E5 /* Politics1badge.png */,
+				1F0B36791AF99062005F18E5 /* Politics2badge.png */,
+				1F0B367A1AF99062005F18E5 /* Politics3badge.png */,
+				1F0B367B1AF99062005F18E5 /* Politics4badge.png */,
+				1F0B367C1AF99062005F18E5 /* Politics5badge.png */,
+				1F0B367D1AF99062005F18E5 /* Science1badge.png */,
+				1F0B367E1AF99062005F18E5 /* Science2badge.png */,
+				1F0B367F1AF99062005F18E5 /* Science3badge.png */,
+				1F0B36801AF99062005F18E5 /* Science4badge.png */,
+				1F0B36811AF99062005F18E5 /* Science5badge.png */,
+				1F0B36821AF99062005F18E5 /* Sports1badge.png */,
+				1F0B36831AF99062005F18E5 /* Sports2badge.png */,
+				1F0B36841AF99062005F18E5 /* Sports3badge.png */,
+				1F0B36851AF99062005F18E5 /* Sports4badge.png */,
+				1F0B36861AF99062005F18E5 /* Sports5badge.png */,
+				1F0B36871AF99062005F18E5 /* Unearnedbadge.png */,
+			);
+			path = PNGBadges;
+			sourceTree = "<group>";
+		};
 		1FCE1E301AF13DED004EA8B1 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +172,7 @@
 		1FCE1E3B1AF13DED004EA8B1 /* PressBadge */ = {
 			isa = PBXGroup;
 			children = (
+				1F0B366D1AF99062005F18E5 /* PNGBadges */,
 				1FCE1E3E1AF13DED004EA8B1 /* AppDelegate.swift */,
 				1FCE1E421AF13DED004EA8B1 /* Main.storyboard */,
 				1FCE1E451AF13DED004EA8B1 /* Images.xcassets */,
@@ -95,6 +183,7 @@
 				1F5D8BCA1AF30CCA009D4D1E /* ProgressBarViewController.swift */,
 				1FCE1E621AF13E57004EA8B1 /* Story.swift */,
 				1FCE1E641AF13E69004EA8B1 /* NewsStory.swift */,
+				1F0B36A21AF990C6005F18E5 /* EarnedViewController.swift */,
 			);
 			path = PressBadge;
 			sourceTree = "<group>";
@@ -204,9 +293,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0B36931AF99062005F18E5 /* Politics2badge.png in Resources */,
+				1F0B368E1AF99062005F18E5 /* Local2badge.png in Resources */,
+				1F0B36941AF99062005F18E5 /* Politics3badge.png in Resources */,
 				1FCE1E441AF13DED004EA8B1 /* Main.storyboard in Resources */,
+				1F0B368C1AF99062005F18E5 /* Life5badge.png in Resources */,
+				1F0B36881AF99062005F18E5 /* Life1badge.png in Resources */,
+				1F0B36961AF99062005F18E5 /* Politics5badge.png in Resources */,
+				1F0B36921AF99062005F18E5 /* Politics1badge.png in Resources */,
+				1F0B369E1AF99062005F18E5 /* Sports3badge.png in Resources */,
+				1F0B36901AF99062005F18E5 /* Local4badge.png in Resources */,
+				1F0B36A01AF99062005F18E5 /* Sports5badge.png in Resources */,
+				1F0B369F1AF99062005F18E5 /* Sports4badge.png in Resources */,
+				1F0B36891AF99062005F18E5 /* Life2badge.png in Resources */,
+				1F0B368F1AF99062005F18E5 /* Local3badge.png in Resources */,
+				1F0B36991AF99062005F18E5 /* Science3badge.png in Resources */,
+				1F0B369D1AF99062005F18E5 /* Sports2badge.png in Resources */,
+				1F0B368A1AF99062005F18E5 /* Life3badge.png in Resources */,
+				1F0B369B1AF99062005F18E5 /* Science5badge.png in Resources */,
 				1FCE1E491AF13DED004EA8B1 /* LaunchScreen.xib in Resources */,
 				1FCE1E461AF13DED004EA8B1 /* Images.xcassets in Resources */,
+				1F0B36971AF99062005F18E5 /* Science1badge.png in Resources */,
+				1F0B36981AF99062005F18E5 /* Science2badge.png in Resources */,
+				1F0B36A11AF99062005F18E5 /* Unearnedbadge.png in Resources */,
+				1F0B369C1AF99062005F18E5 /* Sports1badge.png in Resources */,
+				1F0B369A1AF99062005F18E5 /* Science4badge.png in Resources */,
+				1F0B368B1AF99062005F18E5 /* Life4badge.png in Resources */,
+				1F0B36951AF99062005F18E5 /* Politics4badge.png in Resources */,
+				1F0B368D1AF99062005F18E5 /* Local1badge.png in Resources */,
+				1F0B36911AF99062005F18E5 /* Local5badge.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +345,7 @@
 				1FCE1E651AF13E69004EA8B1 /* NewsStory.swift in Sources */,
 				1FCE1E3F1AF13DED004EA8B1 /* AppDelegate.swift in Sources */,
 				1FCE1E631AF13E57004EA8B1 /* Story.swift in Sources */,
+				1F0B36A31AF990C6005F18E5 /* EarnedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

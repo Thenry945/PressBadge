@@ -12,7 +12,9 @@ class ProgressBarViewController: UITableViewController {
     
     var selectedCategory = ""
     
-    var categories: [String] = ["Science I", "Life I", "Local I", "Politics I", "Sports I", "Science II", "Life II", "Local II", "Politics II","Sports II", "Science III", "Life III", "Local III", "Politics III", "Sports III", "Science IV", "Life IV", "Local IV", "Politics IV", "Sports IV", "Science V", "Life V", "Local V", "Politics V", "Sports V"]
+    var categories: [String] = ["Science", "Life", "Local", "Politics", "Sports"]
+    
+    var earnedBadges = ["Science1","Life1","Sports1"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +67,14 @@ class ProgressBarViewController: UITableViewController {
             
             destinationVC.part = selectedCategory
         }
+        else if ( segue.identifier == "EarnedBadges"){
+            
+            var destinationVC = segue.destinationViewController as! EarnedViewController
+            
+            destinationVC.earnedProgress = earnedBadges
+            
+        }
+        
     }
     
     
