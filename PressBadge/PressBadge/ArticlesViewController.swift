@@ -9,7 +9,7 @@
 import UIKit
 
 class ArticlesViewController: UITableViewController {
-
+    
     var storyList: NewsStories = NewsStories();
     var urlString = "http://api.nytimes.com/svc/search/v2/articlesearch.json?q=Sports&api-key=379f80bbdce5bde2ca5619951803bbea:16:71569476";
     var selectedStory: Story?
@@ -67,11 +67,7 @@ class ArticlesViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let destinationViewController = segue.destinationViewController as! StoryViewController
         destinationViewController.story = selectedStory;
+        destinationViewController.badge = part;
     }
-
-
     
-
-
-
 }
