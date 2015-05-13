@@ -13,10 +13,22 @@
     var selectedCategory = ""
     
     var categories: [String] = ["Science I", "Life I", "Local I", "Politics I", "Sports I", "Science II", "Life II", "Local II", "Politics II","Sports II", "Science III", "Life III", "Local III", "Politics III", "Sports III", "Science IV", "Life IV", "Local IV", "Politics IV", "Sports IV", "Science V", "Life V", "Local V", "Politics V", "Sports V"]
-    var BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+    var BadgeLevels : [String] = ["Sports 1", "Science 1", "Local 1", "Life 1", "Politics 1"]
+    var BadgeProgress = [Float](count: 5, repeatedValue: 0.0)
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        BadgeLevels = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels")! as! [String]
+        if let bl: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("BadgeLevels") {
+            BadgeLevels = bl as! [String]
+        }
+        else {
+            NSUserDefaults.standardUserDefaults().setObject(BadgeLevels, forKey: "BadgeLevels")
+        }
+        if let bp: AnyObject = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress") {
+            BadgeProgress = bp as! [Float]
+        }
+        else {
+            NSUserDefaults.standardUserDefaults().setObject(BadgeProgress, forKey: "BadgeProgress")
+        }
         tableView.reloadData()
     }
     override func viewDidLoad() {
@@ -33,7 +45,7 @@
         
         cell.textLabel!.text = BadgeLevels[indexPath.row]
         println(BadgeLevels[indexPath.row])
-        var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
+        //var BadgeProgress = NSUserDefaults.standardUserDefaults().objectForKey("BadgeProgress")! as! [Float]
         let rowValue = BadgeLevels[indexPath.row]
         //Sports 1", "Science 1", "Local 1", "Life 1", "Politics 1
         if (rowValue.hasPrefix("Sports") == true ) {
