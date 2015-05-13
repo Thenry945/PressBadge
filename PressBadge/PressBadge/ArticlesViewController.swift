@@ -3,6 +3,7 @@
 //  PressBadge
 //
 //  Created by Travis Henrichs on 4/29/15.
+//  Created by Summer & Kenneth, too!
 //  Copyright (c) 2015 Travis Henrichs. All rights reserved.
 //
 
@@ -67,11 +68,7 @@ class ArticlesViewController: UITableViewController {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         let destinationViewController = segue.destinationViewController as! StoryViewController
         destinationViewController.story = selectedStory;
+        destinationViewController.badge = part;
     }
-
-
-    
-
-
 
 }

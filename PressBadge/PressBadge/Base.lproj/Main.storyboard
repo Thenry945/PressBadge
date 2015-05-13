@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4UK-PR-qGL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="4UK-PR-qGL">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Earned-->
@@ -13,11 +14,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="rrC-Lq-TX8">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="rrC-Lq-TX8" customClass="EarnedTableViewCell" customModule="PressBadge" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rrC-Lq-TX8" id="L2n-t2-oms">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I9x-34-Aqo">
+                                            <rect key="frame" x="225" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-Ys-4z8">
+                                            <rect key="frame" x="172" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mtl-vS-ZqT">
+                                            <rect key="frame" x="331" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vgb-Zj-3hL">
+                                            <rect key="frame" x="278" y="2" width="45" height="39"/>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="77s-gs-DnN">
+                                            <rect key="frame" x="390" y="2" width="45" height="39"/>
+                                        </imageView>
+                                    </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="image1" destination="9dQ-Ys-4z8" id="X8L-WB-md6"/>
+                                    <outlet property="image2" destination="I9x-34-Aqo" id="fcn-OQ-rgC"/>
+                                    <outlet property="image3" destination="vgb-Zj-3hL" id="os7-sa-c1b"/>
+                                    <outlet property="image4" destination="mtl-vS-ZqT" id="zJl-l9-7Hw"/>
+                                    <outlet property="image5" destination="77s-gs-DnN" id="4GC-Wy-H8h"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -42,13 +67,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCategories" id="Xec-go-qBM">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellCategories" id="Xec-go-qBM" customClass="ProgressTableViewCell" customModule="PressBadge" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xec-go-qBM" id="RYt-xo-3Jw">
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mfa-DD-KqY">
+                                            <rect key="frame" x="419" y="21" width="150" height="2"/>
+                                        </progressView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="Mfa-DD-KqY" secondAttribute="centerY" id="RlG-eh-ZVB"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Mfa-DD-KqY" secondAttribute="trailing" constant="25" id="ZCF-BM-yTQ"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="wqw-3R-SmL" kind="show" identifier="CategoriesToArticles" id="Caz-2k-es6"/>
+                                    <outlet property="progressBar" destination="Mfa-DD-KqY" id="Nad-cI-XZz"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -61,10 +95,13 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="0Aw-kh-pix"/>
                         <barButtonItem key="rightBarButtonItem" title="Earned" id="rIl-iY-M0S">
                             <connections>
-                                <segue destination="quy-sE-wM1" kind="show" id="mZ8-cY-onk"/>
+                                <segue destination="quy-sE-wM1" kind="show" identifier="EarnedViewController" id="mZ8-cY-onk"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="wqw-3R-SmL" kind="show" identifier="CategoriesToArticles" id="v7A-Lg-YKL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O0W-rA-VoA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -100,7 +137,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mef-eg-CgQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="762" y="371"/>
+            <point key="canvasLocation" x="790" y="485"/>
         </scene>
         <!--Title-->
         <scene sceneID="rvb-rB-O76">
@@ -136,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7PE-F0-1z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1447" y="370"/>
+            <point key="canvasLocation" x="1503" y="196"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Yi-95-6qT">
